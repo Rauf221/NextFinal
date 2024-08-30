@@ -1,21 +1,54 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import { LoginValidation } from "./LoginValidation";
+import CustomLoadingSpinner from "../CustomLoading";
+import { setCookie, getCookie } from "cookies-next";
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from "@firebase/auth";
+import { auth } from "../../firebase/config";
+import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
+import "../../styles/login.css";
+import "../../styles/globals.css";
 
-export default function LoginSignUP() {
- 
+export default function Login() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [isChecked, setIsChecked] = useState(false); // State for checkbox
+  const router = useRouter();
+
+  useEffect(() => {
+    // Check if user has a token
+    const token = getCookie("auth");
+    if (token) {
+      setIsChecked(false); // If token exists, set checkbox to checked
+    }
+  }, []);
+
   const loginFormik = useFormik({
     initialValues: {
       email: "",
       password: "",
     },
     validationSchema: LoginValidation,
-    onSubmit: (values) => {
-      alert(`Log In Form Values: ${JSON.stringify(values, null, 2)}`);
+    onSubmit: async (values) => {
+      setIsLoading(true);
+      try {
+        const res: any = await signInWithEmailAndPassword(auth, values.email, values.password);
+        if (res.user) {
+          toast.success("Login success");
+          localStorage.setItem("user", JSON.stringify(res.user));
+          setCookie("auth", res.user.accessToken, {
+            maxAge: 30 * 24 * 60 * 60, // 30 days
+          });
+          router.push("/home");
+        }
+      } catch (err) {
+        toast.error((err as Error).message);
+      } finally {
+        setIsLoading(false);
+      }
     },
   });
-
 
   const signUpFormik = useFormik({
     initialValues: {
@@ -23,8 +56,19 @@ export default function LoginSignUP() {
       password: "",
     },
     validationSchema: LoginValidation,
-    onSubmit: (values) => {
-      alert(`Sign Up Form Values: ${JSON.stringify(values, null, 2)}`);
+    onSubmit: async (values) => {
+      setIsLoading(true);
+      try {
+        const res = await createUserWithEmailAndPassword(auth, values.email, values.password);
+        if (res.user) {
+          toast.success("Register success");
+          router.push("/");
+        }
+      } catch (err) {
+        toast.error((err as Error).message);
+      } finally {
+        setIsLoading(false);
+      }
     },
   });
 
@@ -43,17 +87,18 @@ export default function LoginSignUP() {
                 type="checkbox"
                 id="reg-log"
                 name="reg-log"
+                checked={isChecked}
+                readOnly
               />
               <label htmlFor="reg-log"></label>
               <div className="card-3d-wrap mx-auto">
                 <div className="card-3d-wrapper">
+                  {/* Log In Form */}
                   <div className="card-front">
                     <div className="center-wrap">
-                      {/* Log In Form */}
                       <form onSubmit={loginFormik.handleSubmit}>
                         <div className="section text-center">
                           <h4 className="mb-4 pb-3">Log In</h4>
-
                           <input
                             name="email"
                             type="email"
@@ -68,7 +113,6 @@ export default function LoginSignUP() {
                               {loginFormik.errors.email}
                             </div>
                           ) : null}
-
                           <input
                             name="password"
                             type="password"
@@ -83,11 +127,10 @@ export default function LoginSignUP() {
                               {loginFormik.errors.password}
                             </div>
                           ) : null}
-
                           <p className="mb-0 mt-4 text-center">
-                            <a href="#0" className="link">
-                              Forgot your password?
-                            </a>
+                            <button  onClick={() => setIsChecked(!isChecked)} className="link">
+                             You dont have an account? Sign Up
+                            </button>
                           </p>
                           <button type="submit" className="btn mt-5">
                             Log In
@@ -97,13 +140,12 @@ export default function LoginSignUP() {
                     </div>
                   </div>
 
+                  {/* Sign Up Form */}
                   <div className="card-back">
                     <div className="center-wrap">
-                      {/* Sign Up Form */}
                       <form onSubmit={signUpFormik.handleSubmit}>
                         <div className="section text-center">
                           <h4 className="mb-4 pb-3">Sign Up</h4>
-
                           <input
                             name="email"
                             type="email"
@@ -118,7 +160,6 @@ export default function LoginSignUP() {
                               {signUpFormik.errors.email}
                             </div>
                           ) : null}
-
                           <input
                             name="password"
                             type="password"
@@ -133,8 +174,7 @@ export default function LoginSignUP() {
                               {signUpFormik.errors.password}
                             </div>
                           ) : null}
-
-                          <button type="submit" className="btn mt-4">
+                          <button type="submit" onClick={() => setIsChecked(!isChecked)} className="btn mt-4">
                             Submit
                           </button>
                         </div>
@@ -143,6 +183,7 @@ export default function LoginSignUP() {
                   </div>
                 </div>
               </div>
+              {isLoading && <CustomLoadingSpinner />}
             </div>
           </div>
         </div>

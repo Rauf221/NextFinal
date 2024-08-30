@@ -1,12 +1,13 @@
 
 
 import LoginSignUP from "@/components/Login";
-import "../styles/login.css"
 
-export default function Home() {
+import Login from "@/components/Login/FidansLogin";
+
+export default function Loginn() {
   return (
     <>
-     <LoginSignUP />
+     < LoginSignUP/>
     </>
   );
 }

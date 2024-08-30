@@ -1,7 +1,6 @@
-import * as Yup from "yup";
+import * as yup from "yup";
 
-   export const LoginValidation = Yup.object().shape({
-        logemail: Yup.string().trim().email('Invalid email').required('Username is required'),
-        logpass: Yup.string().trim().min(6, 'Password must be at least 6 characters').required('Password is required'),
-        });
-  
+export const LoginValidation = yup.object().shape({
+    email: yup.string().trim().email().required("Email is required"),
+    password: yup.string().trim().required("Password is required"),
+});
