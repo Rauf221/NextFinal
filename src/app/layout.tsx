@@ -24,7 +24,7 @@ export default function RootLayout({
       <body >
        <Provider>
         <div className="">
-         
+           
           {loading ? <Loader /> : children}
       
         </div>

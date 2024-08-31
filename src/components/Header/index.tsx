@@ -329,7 +329,7 @@ const Header = () => {
         <div className="h-[1px] bg-slate-100 mt-2"></div>
       </header>
       {/* navbar 2 */}
-      <header className={`w-full flex justify-center top-0 p-2 bg-white fixed shadow-md transition-transform duration-300  ${
+      <header className={`w-full flex justify-center top-0 p-2 bg-white fixed shadow-md z-[1000] transition-transform duration-300  ${
           showStickyHeader ? "translate-y-0 " : "-translate-y-full top-0"
         }`}>
       <nav className={`  container  top-0  flex w-[100%] text-gray-500  transition-transform duration-300`} 

@@ -73,14 +73,14 @@ export default function Login() {
   });
 
   return (
-    <div className="section w-full">
+    <div className="section w-full ">
       <div className="container mx-auto flex justify-center items-center">
         <div className="row full-height flex justify-center items-center">
           <div className="col-12 text-center py-5">
             <div className="section pb-5 pt-5 pt-sm-2 text-center">
-              <h6 className="mb-0 pb-3">
-                <span>Log In</span>
-                <span>Sign Up</span>
+              <h6 className="mb-0 pb-3 ">
+                <span className="text-black">Log In</span>
+                <span className="text-black">Sign Up</span>
               </h6>
               <input
                 className="checkbox"
@@ -98,7 +98,7 @@ export default function Login() {
                     <div className="center-wrap">
                       <form onSubmit={loginFormik.handleSubmit}>
                         <div className="section text-center">
-                          <h4 className="mb-4 pb-3">Log In</h4>
+                          <h4 className="mb-4 pb-3 text-white">Log In</h4>
                           <input
                             name="email"
                             type="email"
@@ -145,7 +145,7 @@ export default function Login() {
                     <div className="center-wrap">
                       <form onSubmit={signUpFormik.handleSubmit}>
                         <div className="section text-center">
-                          <h4 className="mb-4 pb-3">Sign Up</h4>
+                          <h4 className="mb-4 pb-3 text-white">Sign Up</h4>
                           <input
                             name="email"
                             type="email"

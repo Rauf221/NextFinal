@@ -1,4 +1,4 @@
-import SwiperMainContext from "../Swiper/Swiper"; 
+import SwiperMainContext from "../Swiper/Swiper";
 
 export default function HomePageMainContext() {
   return (
@@ -50,33 +50,48 @@ export default function HomePageMainContext() {
           </div>
         </div>
       </section>
-      <section className="section_2 container w-[100%] h-[700px]">
+      <section className="section_2 container w-[100%] h-[1000px]">
         <div className="w-[100%] flex flex-col items-center mt-24 gap-3">
-            <span className="text-[#79b38a] font-bold text-sm">WOODEN ACCESSORIES</span>
-            <h1 className="lora text-2xl">FEATURED PRODUCTS</h1>
-            <p className="font-normal">Visit our shop to see amazing creations from our designers.</p>
+          <span className="text-[#79b38a] font-bold text-sm">
+            WOODEN ACCESSORIES
+          </span>
+          <h1 className="lora text-2xl">FEATURED PRODUCTS</h1>
+          <p className="font-normal">
+            Visit our shop to see amazing creations from our designers.
+          </p>
         </div>
         <div className="w-[100%] flex justify-center mt-7">
-            <ul className="flex gap-5">
-                <li className="relative group"> 
-                    <span className="lora">BEST SELLERS</span>
-                    <span className="absolute bottom-[-2px] left-0 w-0 group-hover:w-full transition-all duration-300 h-[2px] bg-[#87B38D]"></span>
-                </li>
-                <li className="relative group">
-                    <span className="lora">FEATURED</span>
-                    <span className="absolute bottom-[-2px] left-0 w-0 group-hover:w-full transition-all duration-300 h-[2px] bg-[#87B38D]"></span>
-                </li>
-                <li className="relative group">
-                    <span className="lora">SALES</span>
-                    <span className="absolute bottom-[-2px] left-0 w-0 group-hover:w-full transition-all duration-300 h-[2px] bg-[#87B38D]"></span>
-                </li>
-            </ul>
-           
+          <ul className="flex gap-5">
+            <li className="relative group">
+              <span className="lora">BEST SELLERS</span>
+              <span className="absolute bottom-[-2px] left-0 w-0 group-hover:w-full transition-all duration-300 h-[2px] bg-[#87B38D]"></span>
+            </li>
+            <li className="relative group">
+              <span className="lora">FEATURED</span>
+              <span className="absolute bottom-[-2px] left-0 w-0 group-hover:w-full transition-all duration-300 h-[2px] bg-[#87B38D]"></span>
+            </li>
+            <li className="relative group">
+              <span className="lora">SALES</span>
+              <span className="absolute bottom-[-2px] left-0 w-0 group-hover:w-full transition-all duration-300 h-[2px] bg-[#87B38D]"></span>
+            </li>
+          </ul>
         </div>
-        <div className="w-[100%]">
-         <SwiperMainContext/>
+        <div className="w-[100%] h-[800px] p-5">
+          <SwiperMainContext />
         </div>
       </section>
+      <section className="section_3 container w-[100%] h-[1000px]">
+      <div className="w-[100%] flex flex-col items-center mt-24 gap-3">
+          <span className="text-[#79b38a] font-bold text-sm">
+            WOODEN ACCESSORIES
+          </span>
+          <h1 className="lora text-2xl">FEATURED PRODUCTS</h1>
+          <p className="font-normal">
+            Visit our shop to see amazing creations from our designers.
+          </p>
+        </div>
+     </section>
+
     </>
   );
 }
