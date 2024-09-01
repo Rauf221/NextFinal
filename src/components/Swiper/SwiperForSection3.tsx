@@ -43,7 +43,7 @@ const SwiperSection3 = () => {
             <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
 
             <div className="absolute inset-0 flex justify-center items-center">
-              <button className="bg-[#79b38a] text-white text-3xl lora py-3 px-6 opacity-100 transition-opacity duration-400 group-hover:opacity-0">
+              <button className="bg-[#79b38a] text-white text-2xl lora py-3 px-6 opacity-100 transition-opacity duration-400 group-hover:opacity-0">
           TOYS
               </button>
               <div className="absolute inset-0 flex justify-center opacity-0 transition-opacity duration-400  group-hover:opacity-100 group-hover:delay-300 items-center">
@@ -65,7 +65,7 @@ const SwiperSection3 = () => {
             <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
 
             <div className="absolute inset-0 flex justify-center items-center">
-              <button className="bg-[#79b38a] text-white text-3xl lora py-3 px-6 opacity-100 transition-opacity duration-400 group-hover:opacity-0">
+              <button className="bg-[#79b38a] text-white text-2xl lora py-3 px-6 opacity-100 transition-opacity duration-400 group-hover:opacity-0">
                 CLOCKS
               </button>
               <div className="absolute inset-0 flex justify-center opacity-0 transition-opacity duration-400  group-hover:opacity-100 group-hover:delay-300 items-center">
@@ -88,7 +88,7 @@ const SwiperSection3 = () => {
             <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
 
             <div className="absolute inset-0 flex justify-center items-center">
-              <button className="bg-[#79b38a] text-white text-3xl lora py-3 px-6 opacity-100 transition-opacity duration-400 group-hover:opacity-0">
+              <button className="bg-[#79b38a] text-white text-2xl lora py-3 px-6 opacity-100 transition-opacity duration-400 group-hover:opacity-0">
                ACCESSORIES
               </button>
               <div className="absolute inset-0 flex justify-center opacity-0 transition-opacity duration-400  group-hover:opacity-100 group-hover:delay-300 items-center">
@@ -110,7 +110,7 @@ const SwiperSection3 = () => {
             <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
 
             <div className="absolute inset-0 flex justify-center items-center">
-              <button className="bg-[#79b38a] text-white text-3xl lora py-3 px-6 opacity-100 transition-opacity duration-400 group-hover:opacity-0">
+              <button className="bg-[#79b38a] text-white text-2xl lora py-3 px-6 opacity-100 transition-opacity duration-400 group-hover:opacity-0">
               DECOR
               </button>
               <div className="absolute inset-0 flex justify-center opacity-0 transition-opacity duration-400  group-hover:opacity-100 group-hover:delay-300 items-center">

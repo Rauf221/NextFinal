@@ -15,7 +15,13 @@ import { LiaShoppingBagSolid } from "react-icons/lia";
 import { FiHeart } from "react-icons/fi";
 import { HiOutlineSearch } from "react-icons/hi";
 import { useEffect, useState } from "react";
+import Sidebar from "../Sidebar/Sidebar";
 const Header = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
 
   const scrollinvisble = 300;
 
@@ -51,6 +57,9 @@ const Header = () => {
   
   return (
     <>
+    
+    <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      {/* Navbar 1 */}
       <header
         className={`w-full transition-transform duration-300 `}
       >
@@ -162,7 +171,9 @@ const Header = () => {
               </div>
               <div className="flex items-center space-x-2 relative">
                 <div className="relative flex text-center justify-center items-center  ">
-                  <LiaShoppingBagSolid className="  cursor-pointer text-2xl text-black hover:text-[#87B38D]" />
+               <button onClick={toggleSidebar}>
+               <LiaShoppingBagSolid className="  cursor-pointer text-2xl text-black hover:text-[#87B38D]" onClick={toggleSidebar} />
+               </button>
                   <span className="absolute bottom-3 left-4  bg-[#87B38D] text-xs flex justify-center items-center  text-white h-4 w-4 rounded-full">
                     0
                   </span>
