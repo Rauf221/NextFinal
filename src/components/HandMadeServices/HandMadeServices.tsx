@@ -2,7 +2,7 @@ export default function Section_4() {
   return (
     <>
     
-   <div className="flex gap-10">
+   <div className="flex gap-10 container justify-center">
    <div className="relative h-[300px] flex flex-col items-items-center justify-center ">
       <div className=" bottom-[220px] left-[82px] absolute rounded-full w-[100px] h-[100px] bg-[#eaeaea] flex justify-center items-center ">
         <img src="https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/origami-bird.svg" className="w-[60px]" alt="" />

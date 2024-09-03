@@ -1,6 +1,7 @@
 import Section_4 from "../HandMadeServices/HandMadeServices";
 import SwiperMainContext from "../Swiper/SwiperSection2";
 import SwiperSection3 from "../Swiper/SwiperForSection3";
+import SwiperForHandMadeServices from "../Swiper/SwiperForHandMadeServices";
 
 export default function HomePageMainContext() {
   return (
@@ -110,7 +111,7 @@ export default function HomePageMainContext() {
           <Section_4/>
         </div>
      </section>
-      <section className="section_5 container w-[100%] ">
+      <section className="section_5 container mx-auto w-[100%] ">
         <div className="w-[100%] flex flex-col items-center mt-16 gap-3">
           <span className="text-[#79b38a] font-bold text-sm">
             WOODEN ACCESSORIES
@@ -120,8 +121,8 @@ export default function HomePageMainContext() {
             Visit our shop to see amazing creations from our designers.
           </p>
         </div>
-        <div className="w-[100%]  p-5">
-       
+        <div className="w-[100%] h-auto p-5">
+            <SwiperForHandMadeServices/>
         </div>
       </section>
     </>

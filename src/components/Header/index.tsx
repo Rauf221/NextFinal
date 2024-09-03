@@ -16,8 +16,15 @@ import { FiHeart } from "react-icons/fi";
 import { HiOutlineSearch } from "react-icons/hi";
 import { useEffect, useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
+
+
+
+
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [cartCount, setCartCount] = useState(0);
+
+
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -58,7 +65,7 @@ const Header = () => {
   return (
     <>
     
-    <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+    <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} cartItems={[]} setCartItems={() => {}} />
       {/* Navbar 1 */}
       <header
         className={`w-full transition-transform duration-300 `}
@@ -172,10 +179,10 @@ const Header = () => {
               <div className="flex items-center space-x-2 relative">
                 <div className="relative flex text-center justify-center items-center  ">
                <button onClick={toggleSidebar}>
-               <LiaShoppingBagSolid className="  cursor-pointer text-2xl text-black hover:text-[#87B38D]" onClick={toggleSidebar} />
+               <LiaShoppingBagSolid className="  cursor-pointer text-2xl text-black hover:text-[#87B38D]"  />
                </button>
                   <span className="absolute bottom-3 left-4  bg-[#87B38D] text-xs flex justify-center items-center  text-white h-4 w-4 rounded-full">
-                    0
+                  {cartCount}
                   </span>
                 </div>
               </div>
@@ -524,9 +531,11 @@ const Header = () => {
               </div>
               <div className="flex items-center space-x-2 relative">
                 <div className="relative flex text-center justify-center items-center  ">
-                  <LiaShoppingBagSolid className="  cursor-pointer text-2xl text-black hover:text-[#87B38D]" />
+                <button onClick={toggleSidebar}>
+               <LiaShoppingBagSolid className="  cursor-pointer text-2xl text-black hover:text-[#87B38D]"  />
+               </button>
                   <span className="absolute bottom-3 left-4  bg-[#87B38D] text-xs flex justify-center items-center  text-white h-4 w-4 rounded-full">
-                    0
+                  {cartCount}
                   </span>
                 </div>
               </div>

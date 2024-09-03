@@ -1,18 +1,21 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { FaStar } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import useSWR from "swr";
 import "swiper/css";
 import "swiper/css/navigation";
-
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import styles from "../../styles/Slider.module.css";
 // SWR fetcher function
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const SwiperSection3 = () => {
   // Use SWR to fetch data
   const { data, error } = useSWR<[]>("http://localhost:3001/swiper", fetcher);
+
+
 
   if (error) return <div>Failed to load</div>;
   if (!data) return <div>Loading...</div>;
@@ -24,11 +27,11 @@ const SwiperSection3 = () => {
         slidesPerView={3}
         grabCursor={true}
         navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: `.${styles.swiperButtonNext}`,
+          prevEl: `.${styles.swiperButtonPrev}`, 
         }}
         modules={[Navigation]}
-        className="mySwiper"
+        className={`mySwiper ${styles.mySwiper}`}
       >
         <SwiperSlide>
           <div className="relative group h-[320px] w-[385px]">
@@ -122,8 +125,13 @@ const SwiperSection3 = () => {
       </Swiper>
 
       {/* Navigation Buttons */}
-      <div className="swiper-button-prev "></div>
-      <div className="swiper-button-next"></div>
+      <div className={`absolute top-[150px] left-[1120px] ${styles.swiperButtonNext}`}>
+      <MdArrowForwardIos />
+      </div>
+      <div className={`absolute top-[150px] right-[1120px] ${styles.swiperButtonPrev}`}>
+      <MdArrowBackIos />
+      </div>
+
     </div>
   );
 };
