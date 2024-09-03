@@ -37,7 +37,7 @@ const SwiperForHandMadeServices = () => {
         className={`mySwiper ${styles.mySwiper}`}
       >
         <SwiperSlide className=" relative  ">
-          <div className=" group h-[420px] border w-[401px] ">
+          <div className=" group h-[420px]  w-[401px] ">
             <div className="bg-cover relative overflow-hidden h-[270px] w-[400px] ">
               <img
                 src="https://woodmart.xtemos.com/handmade/wp-content/uploads/sites/3/2017/06/blog-post-hand-made-3-opt.jpg"
@@ -47,8 +47,8 @@ const SwiperForHandMadeServices = () => {
               <div className="absolute flex justify-center p-0 m-0 items-center text-8xl z-50 inset-0    group-hover:animate-fade-in-left_1s_ease-in-out group-hover:opacity-100 duration-700 delay-100  opacity-0   transition-all text-white"><RxDotsHorizontal /></div>
               <div className="absolute  inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
             </div>
-            <div className="flex justify-center text-2xl font-bold text-center pt-5 px-10">
-              <h1>Minimalist Japanese-inspired furniture</h1>
+            <div className="flex justify-center text-2xl text-center pt-5 px-3">
+              <h1 className="lora">Minimalist Japanese-inspired furniture</h1>
             </div>
             <div className=" flex  justify-center gap-3 text-xl items-center pt-4 ">
               <div className="flex justify-center text-sm gap-2 text-center  text-[#a8a8a8]  ">
@@ -84,7 +84,7 @@ const SwiperForHandMadeServices = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" group h-[420px] border w-[401px]">
+        <div className=" group h-[420px]  w-[401px]">
             <div className="bg-cover relative overflow-hidden h-[270px] w-[400px] ">
               <img
                 src="https://woodmart.xtemos.com/handmade/wp-content/uploads/sites/3/2017/06/blog-post-hand-made-2-opt.jpg"
@@ -94,8 +94,8 @@ const SwiperForHandMadeServices = () => {
               <div className="absolute flex justify-center p-0 m-0 items-center text-8xl z-50 inset-0    group-hover:animate-fade-in-left_1s_ease-in-out group-hover:opacity-100 duration-700 delay-100  opacity-0   transition-all text-white"><RxDotsHorizontal /></div>
               <div className="absolute  inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
             </div>
-            <div className="flex justify-center text-2xl font-bold text-center pt-5 px-10">
-              <h1>New home decor from John Doerson</h1>
+            <div className="flex justify-center text-2xl text-center pt-5 px-3">
+              <h1 className="lora">New home decor from John Doerson</h1>
             </div>
             <div className=" flex  justify-center gap-3 text-xl items-center pt-4 ">
               <div className="flex justify-center text-sm gap-2 text-center  text-[#a8a8a8]  ">
@@ -132,7 +132,7 @@ const SwiperForHandMadeServices = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-        <div className=" group h-[420px] border w-[401px]">
+        <div className=" group h-[420px]  w-[401px]">
             <div className="bg-cover relative overflow-hidden h-[270px] w-[400px] ">
               <img
                 src="https://woodmart.xtemos.com/handmade/wp-content/uploads/sites/3/2017/06/blog-post-hand-made-1-opt.jpg"
@@ -142,8 +142,8 @@ const SwiperForHandMadeServices = () => {
               <div className="absolute flex justify-center p-0 m-0 items-center text-8xl z-50 inset-0    group-hover:animate-fade-in-left_1s_ease-in-out group-hover:opacity-100 duration-700 delay-100  opacity-0   transition-all text-white"><RxDotsHorizontal /></div>
               <div className="absolute  inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
             </div>
-            <div className="flex justify-center text-2xl font-bold text-center pt-5 px-10">
-              <h1>The big design: Wall likes pictures</h1>
+            <div className="flex justify-center text-2xl text-center pt-5 px-3">
+              <h1 className="lora">The big design: Wall likes pictures</h1>
             </div>
             <div className=" flex  justify-center gap-3 text-xl items-center pt-4 ">
               <div className="flex justify-center text-sm gap-2 text-center  text-[#a8a8a8]  ">
@@ -179,7 +179,7 @@ const SwiperForHandMadeServices = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" group h-[420px] border w-[401px]">
+        <div className=" group h-[420px]  w-[401px]">
             <div className="bg-cover relative overflow-hidden h-[270px] w-[400px] ">
               <img
                 src="https://woodmart.xtemos.com/handmade/wp-content/uploads/sites/3/2017/06/blog-post-hand-made-4-opt.jpg"
@@ -189,8 +189,8 @@ const SwiperForHandMadeServices = () => {
               <div className="absolute flex justify-center p-0 m-0 items-center text-8xl z-50 inset-0    group-hover:animate-fade-in-left_1s_ease-in-out group-hover:opacity-100 duration-700 delay-100  opacity-0   transition-all text-white"><RxDotsHorizontal /></div>
               <div className="absolute  inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
             </div>
-            <div className="flex justify-center text-2xl font-bold text-center pt-5 px-10">
-              <h1>Sweet seat: functional seat for IT folks</h1>
+            <div className="flex justify-center text-2xl text-center pt-5 px-3">
+              <h1 className="lora">Sweet seat: functional seat for IT folks</h1>
             </div>
             <div className=" flex  justify-center gap-3 text-xl items-center pt-4 ">
               <div className="flex justify-center text-sm gap-2 text-center  text-[#a8a8a8]  ">

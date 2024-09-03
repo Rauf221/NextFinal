@@ -2,6 +2,8 @@ import Section_4 from "../HandMadeServices/HandMadeServices";
 import SwiperMainContext from "../Swiper/SwiperSection2";
 import SwiperSection3 from "../Swiper/SwiperForSection3";
 import SwiperForHandMadeServices from "../Swiper/SwiperForHandMadeServices";
+import TestimonialSlider from "../Swiper/SwiperForWhatTheySayAboutUs";
+import InstagramSection from "../WhatTheySayAboutUs/Instagram";
 
 export default function HomePageMainContext() {
   return (
@@ -123,6 +125,14 @@ export default function HomePageMainContext() {
         </div>
         <div className="w-[100%] h-auto p-5">
             <SwiperForHandMadeServices/>
+        </div>
+      </section>
+      <section className="section_6 container flex mx-auto w-[100%]">
+        <div className="flex flex-col w-[50%] mt-20">
+          <TestimonialSlider />
+        </div>
+        <div className="flex w-[50%] mt-20">
+        <InstagramSection />
         </div>
       </section>
     </>
