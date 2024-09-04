@@ -4,6 +4,8 @@ import { RxDotsHorizontal } from "react-icons/rx";
 import useSWR from "swr";
 import "../../styles/globals.css";
 
+import BlogSignupSection from "../HeyYouSignUP/BlogSignUp";
+
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -83,7 +85,10 @@ export default function BlogMainContext() {
             </div>
           </div>
         ))}
-
+      </div>
+      <div className="h-[200px]">
+        
+        <BlogSignupSection />
       </div>
     </>
   );
