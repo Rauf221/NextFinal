@@ -12,6 +12,7 @@ import styles from "../../styles/Slider.module.css";
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const SwiperSection3 = () => {
+  
  
   const { data, error } = useSWR<{ swiper: { id: string, title: string, image: string, productsCount: number }[] }>("http://localhost:3001/DatasForAdminPanel", fetcher);
 

@@ -33,6 +33,7 @@ type SlideType = {
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const SwiperMainContext = () => {
+  
   const [cartItems, setCartItems] = useState<ProductType[]>([]);
   const [wishlistItems, setWishlistItems] = useState<ProductType[]>([]);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

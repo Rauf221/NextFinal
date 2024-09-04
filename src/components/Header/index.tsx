@@ -189,7 +189,7 @@ const Header = () => {
             <ul className="flex space-x-4 items-start justify-center  ">
               <li className="group mt-[3px] ">
                 <Link
-                  href="/"
+                  href="/homegit "
                   className="flex items-center relative text-sm hover:text-[#87B38D]"
                 >
                   HOME <IoIosArrowDown className="text-gray-300" />
@@ -344,7 +344,7 @@ const Header = () => {
          
        >
            <div>
-            <Link href="/" className="">
+            <Link href="/home" className="">
               <img
                 src="https://woodmart.b-cdn.net/handmade/wp-content/themes/woodmart/images/wood-logo-dark.svg"
                 className="w-[300px] h-[50px]"
@@ -357,7 +357,7 @@ const Header = () => {
             <ul className="flex space-x-4 items-start justify-center  ">
               <li className="group mt-[3px] ">
                 <Link
-                  href="/"
+                  href="/home"
                   className="flex items-center relative text-sm hover:text-[#87B38D]"
                 >
                   HOME <IoIosArrowDown className="text-gray-300" />

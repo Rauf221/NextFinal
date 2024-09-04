@@ -23,6 +23,7 @@ type WishlistItemProps = {
 
 
 const WishlistItem: React.FC<WishlistItemProps> = ({ wishlistItems, removeFromWishlist }) => {
+  
   const [selected, setSelected] = useState(false);
   const [cartItems, setCartItems] = useState<ProductType[]>([]); 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); 
