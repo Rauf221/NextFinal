@@ -4,7 +4,7 @@ import React, { useState, ReactNode } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export default function DefaultLayout({
+export default function DefaultLayoutforHomepage({
   children,
 }: {
   children: React.ReactNode;

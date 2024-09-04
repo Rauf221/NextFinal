@@ -1,225 +1,236 @@
 {
-    "swiper": [
-      {
-        "id": 1,
-        "products": [
-          {
-            "title": "Wall Photo",
-            "category": "Decor",
-            "price": "£599.00",
-            "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
-            "rating": 5
-          },
-          {
-            "title": "Wall Clocks",
-            "category": "Clocks",
-            "price": "£320.00",
-            "oldPrice": "£399.00",
-            "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
-            "rating": null
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "products": [
-          {
-            "title": "Wall Art",
-            "category": "Art",
-            "price": "£450.00",
-            "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
-            "rating": 4
-          },
-          {
-            "title": "Handmade Vase",
-            "category": "Vases",
-            "price": "£200.00",
-            "oldPrice": "£250.00",
-            "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
-            "rating": null
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "products": [
-          {
-            "title": "Vintage Clock",
-            "category": "Clocks",
-            "price": "£620.00",
-            "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
-            "rating": 5
-          },
-          {
-            "title": "Modern Lamp",
-            "category": "Lighting",
-            "price": "£150.00",
-            "oldPrice": "£180.00",
-            "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
-            "rating": null
-          }
-        ]
-      },
+  "swiper": [
+    {
+      "id": "2",
+      "products": [
         {
-            "id": 4,
-            "products": [
-            {
-                "title": "Wall Art",
-                "category": "Art",
-                "price": "£450.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
-                "rating": 4
-            },
-            {
-                "title": "Handmade Vase",
-                "category": "Vases",
-                "price": "£200.00",
-                "oldPrice": "£250.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
-                "rating": null
-            }
-            ]
+          "title": "Wall Art",
+          "category": "Art",
+          "price": "£450.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
+          "rating": 4
         },
         {
-            "id": 5,
-            "products": [
-            {
-                "title": "Vintage Clock",
-                "category": "Clocks",
-                "price": "£620.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
-                "rating": 5
-            },
-            {
-                "title": "Modern Lamp",
-                "category": "Lighting",
-                "price": "£150.00",
-                "oldPrice": "£180.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
-                "rating": null
-            }
-            ]
-        },
-        {
-            "id": 6,
-            "products": [
-            {
-                "title": "Wall Art",
-                "category": "Art",
-                "price": "£450.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
-                "rating": 4
-            },
-            {
-                "title": "Handmade Vase",
-                "category": "Vases",
-                "price": "£200.00",
-                "oldPrice": "£250.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
-                "rating": null
-            }
-            ]
-        },
-        {
-            "id": 7,
-            "products": [
-            {
-                "title": "Vintage Clock",
-                "category": "Clocks",
-                "price": "£620.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
-                "rating": 5
-            },
-            {
-                "title": "Modern Lamp",
-                "category": "Lighting",
-                "price": "£150.00",
-                "oldPrice": "£180.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
-                "rating": null
-            }
-            ]
-        },
-        {
-            "id": 8,
-            "products": [
-            {
-                "title": "Wall Art",
-                "category": "Art",
-                "price": "£450.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
-                "rating": 4
-            },
-            {
-                "title": "Handmade Vase",
-                "category": "Vases",
-                "price": "£200.00",
-                "oldPrice": "£250.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
-                "rating": null
-            }
-            ]
-        },
-        {
-            "id": 9,
-            "products": [
-            {
-                "title": "Vintage Clock",
-                "category": "Clocks",
-                "price": "£620.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
-                "rating": 5
-            },
-            {
-                "title": "Modern Lamp",
-                "category": "Lighting",
-                "price": "£150.00",
-                "oldPrice": null,
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
-                "rating": null
-            }
-            ]
-        },
-        {
-            "id": 10,
-            "products": [
-            {
-                "title": "Wall Art",
-                "category": "Art",
-                "price": "£450.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
-                "rating": 4
-            },
-            {
-                "title": "Handmade Vase",
-                "category": "Vases",
-                "price": "£200.00",
-                "oldPrice": "£250.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
-                "rating": null
-            }
-            ]
-        },
-        {
-            "id": 11,
-            "products": [
-            {
-                "title": "Vintage Clock",
-                "category": "Clocks",
-                "price": "£620.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
-                "rating": 3
-            },
-            {
-                "title": "Modern Lamp",
-                "category": "Lighting",
-                "price": "£150.00",
-                "oldPrice": "£180.00",
-                "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
-                "rating": null
-            }
-            ]
+          "title": "Handmade Vase",
+          "category": "Vases",
+          "price": "£200.00",
+          "oldPrice": "£250.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
+          "rating": null
         }
-    ]
-  }
-  
+      ]
+    },
+    {
+      "id": "3",
+      "products": [
+        {
+          "title": "Vintage Clock",
+          "category": "Clocks",
+          "price": "£620.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
+          "rating": 5
+        },
+        {
+          "title": "Modern Lamp",
+          "category": "Lighting",
+          "price": "£150.00",
+          "oldPrice": "£180.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
+          "rating": null
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "products": [
+        {
+          "title": "Wall Art",
+          "category": "Art",
+          "price": "£450.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
+          "rating": 4
+        },
+        {
+          "title": "Handmade Vase",
+          "category": "Vases",
+          "price": "£200.00",
+          "oldPrice": "£250.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
+          "rating": null
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "products": [
+        {
+          "title": "Vintage Clock",
+          "category": "Clocks",
+          "price": "£620.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
+          "rating": 5
+        },
+        {
+          "title": "Modern Lamp",
+          "category": "Lighting",
+          "price": "£150.00",
+          "oldPrice": "£180.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
+          "rating": null
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "products": [
+        {
+          "title": "Wall Art",
+          "category": "Art",
+          "price": "£450.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
+          "rating": 4
+        },
+        {
+          "title": "Handmade Vase",
+          "category": "Vases",
+          "price": "£200.00",
+          "oldPrice": "£250.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
+          "rating": null
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "products": [
+        {
+          "title": "Vintage Clock",
+          "category": "Clocks",
+          "price": "£620.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
+          "rating": 5
+        },
+        {
+          "title": "Modern Lamp",
+          "category": "Lighting",
+          "price": "£150.00",
+          "oldPrice": "£180.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
+          "rating": null
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "products": [
+        {
+          "title": "Wall Art",
+          "category": "Art",
+          "price": "£450.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
+          "rating": 4
+        },
+        {
+          "title": "Handmade Vase",
+          "category": "Vases",
+          "price": "£200.00",
+          "oldPrice": "£250.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
+          "rating": null
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "products": [
+        {
+          "title": "Vintage Clock",
+          "category": "Clocks",
+          "price": "£620.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
+          "rating": 5
+        },
+        {
+          "title": "Modern Lamp",
+          "category": "Lighting",
+          "price": "£150.00",
+          "oldPrice": null,
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
+          "rating": null
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "products": [
+        {
+          "title": "Wall Art",
+          "category": "Art",
+          "price": "£450.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
+          "rating": 4
+        },
+        {
+          "title": "Handmade Vase",
+          "category": "Vases",
+          "price": "£200.00",
+          "oldPrice": "£250.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
+          "rating": null
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "products": [
+        {
+          "title": "Vintage Clock",
+          "category": "Clocks",
+          "price": "£620.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-1-opt.jpg",
+          "rating": 3
+        },
+        {
+          "title": "Modern Lamp",
+          "category": "Lighting",
+          "price": "£150.00",
+          "oldPrice": "£180.00",
+          "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2017/06/finaly-banner-handmade-6-opt.jpg",
+          "rating": null
+        }
+      ]
+    }
+  ],
+  "DatasForAdminPanel": [
+    {
+      "id": "1",
+      "title": "TOYS",
+      "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2018/10/handmade-categories-6-opt.jpg",
+      "productsCount": 4
+    },
+    {
+      "id": "2",
+      "title": "CLOCKS",
+      "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2018/10/handmade-categories-4-opt.jpg",
+      "productsCount": 4
+    },
+    {
+      "id": "3",
+      "title": "ACCESSORIES",
+      "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2018/10/handmade-categories-5-opt.jpg",
+      "productsCount": 4
+    },
+    {
+      "id": "4",
+      "title": "DECOR",
+      "image": "https://woodmart.b-cdn.net/handmade/wp-content/uploads/sites/3/2021/09/handmade-category-4.jpg",
+      "productsCount": 4
+    },
+    {
+      "id": "",
+      "title": "dwadaewe",
+      "productCount": 2321,
+      "image": "blob:http://localhost:3000/934205dc-b411-4734-86ca-d14ee051336b"
+    }
+  ]
+}
