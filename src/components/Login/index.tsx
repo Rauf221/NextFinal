@@ -13,14 +13,14 @@ import "../../styles/globals.css";
 
 export default function Login() {
   const [isLoading, setIsLoading] = useState(false);
-  const [isChecked, setIsChecked] = useState(false); // State for checkbox
+  const [isChecked, setIsChecked] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
-    // Check if user has a token
+  
     const token = getCookie("auth");
     if (token) {
-      setIsChecked(false); // If token exists, set checkbox to checked
+      setIsChecked(false); 
     }
   }, []);
 
@@ -38,7 +38,7 @@ export default function Login() {
           toast.success("Login success");
           localStorage.setItem("user", JSON.stringify(res.user));
           setCookie("auth", res.user.accessToken, {
-            maxAge: 30 * 24 * 60 * 60, // 30 days
+            maxAge: 30 * 24 * 60 * 60, 
           });
           router.push("/home");
         }
@@ -93,7 +93,6 @@ export default function Login() {
               <label htmlFor="reg-log"></label>
               <div className="card-3d-wrap mx-auto">
                 <div className="card-3d-wrapper">
-                  {/* Log In Form */}
                   <div className="card-front">
                     <div className="center-wrap">
                       <form onSubmit={loginFormik.handleSubmit}>
@@ -132,15 +131,14 @@ export default function Login() {
                              You dont have an account? Sign Up
                             </button>
                           </p>
-                          <button type="submit" className="btn mt-5">
-                            Log In
+                          <button type="submit" className={`btn flex mt-5  gap-2 px-5 ${isLoading ?' disabled:opacity-50 disabled:cursor-not-allowed ' : 'opacity-100 cursor-pointer'}`}>
+                          {isLoading && <CustomLoadingSpinner />}  Log In
                           </button>
                         </div>
                       </form>
                     </div>
                   </div>
 
-                  {/* Sign Up Form */}
                   <div className="card-back">
                     <div className="center-wrap">
                       <form onSubmit={signUpFormik.handleSubmit}>
@@ -183,7 +181,7 @@ export default function Login() {
                   </div>
                 </div>
               </div>
-              {isLoading && <CustomLoadingSpinner />}
+             
             </div>
           </div>
         </div>

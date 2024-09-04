@@ -11,12 +11,10 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between px-6 py-4 bg-white shadow-md dark:bg-gray-900">
-      {/* Left Section */}
       <div>
         <h2 className="text-2xl font-semibold text-gray-800 dark:text-white"> Dashboard</h2>
       </div>
 
-      {/* Center Section - Search Bar */}
       <div className="flex-1 mx-6 relative">
         <input
           type="text"
@@ -26,15 +24,12 @@ const Header = () => {
         <FiSearch className="absolute left-3 top-3 text-gray-400 dark:text-gray-300" />
       </div>
 
-      {/* Right Section */}
       <div className="flex items-center space-x-4">
-        {/* Notifications Button */}
         <button className="relative p-2 rounded-full bg-gray-200 dark:bg-gray-700 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600">
           <FiBell className="h-6 w-6" />
           <span className="absolute top-0 right-0 block h-2 w-2 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full"></span>
         </button>
 
-        {/* Profile Dropdown */}
         <div className="relative">
           <button
             onClick={toggleDropdown}
@@ -44,7 +39,6 @@ const Header = () => {
             <FiChevronDown className="h-4 w-4" />
           </button>
 
-          {/* Dropdown Menu */}
           {dropdownOpen && (
             <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 dark:bg-gray-800">
               <a

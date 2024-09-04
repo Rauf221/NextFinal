@@ -1,4 +1,3 @@
-// components/Footer.tsx
 import { FaMapMarkerAlt, FaPhone, FaFax } from "react-icons/fa";
 
 const Footer = () => {

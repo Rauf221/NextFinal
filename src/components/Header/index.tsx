@@ -66,14 +66,11 @@ const Header = () => {
     <>
     
     <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} cartItems={[]} setCartItems={() => {}} />
-      {/* Navbar 1 */}
       <header
         className={`w-full transition-transform duration-300 `}
       >
-        {/* Üst Çubuk */}
         <div className="bg-[#87B38D] text-white text-xs">
           <div className="container mx-auto flex justify-between items-center px-4">
-            {/* Sol Taraf */}
 
             <div className="flex items-center space-x-4">
               <div className="h-[40px] w-[1px] bg-slate-300 "></div>
@@ -88,7 +85,6 @@ const Header = () => {
               <span>FREE SHIPPING FOR ALL ORDERS OF $150</span>
             </div>
 
-            {/* Sağ Taraf */}
             <div className="flex items-center space-x-2  ">
               <FaFacebookF className="cursor-pointer text-[17px]" />
               <FaTwitter className="cursor-pointer text-[17px]" />
@@ -107,10 +103,8 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Ana Başlık ve Menü */}
         <div className="bg-white text-black">
           <div className="container mx-auto flex justify-between items-center py-6 px-4">
-            {/* Sol Taraf */}
             <div className="flex items-center space-x-8">
               <div className="flex items-center space-x-2">
                 <img
@@ -146,7 +140,6 @@ const Header = () => {
               </div>
             </div>
 
-            {/* Ortadaki Logo */}
             <div>
               <Link href="/" className="text-3xl font-bold">
                 <img
@@ -157,7 +150,6 @@ const Header = () => {
               </Link>
             </div>
 
-            {/* Sağ Taraf */}
             <div className="flex items-center space-x-6">
               <Link href="/login" className="text-sm hover:text-[#87B38D]">
                 LOGIN / REGISTER
@@ -191,7 +183,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Alt Navigasyon Menüsü */}
         <nav className="bg-white text-gray-500 w-[100%] relative">
           <div className="h-[1px] bg-slate-100 mb-2"></div>
           <div className="container mx-auto  flex justify-center py-2 px-4 items-center">
@@ -205,7 +196,7 @@ const Header = () => {
                   <span className="absolute bottom-[-2px] left-0 w-0 group-hover:w-full transition-all duration-300 h-[2px] bg-[#87B38D]"></span>
                 </Link>
 
-                <div className="h-[550px] invisible w-[100%] mt-[2px] left-0 group-hover:visible  transition-all duration-150 bg-white absolute shadow-inner  ">
+                <div className="h-[550px] invisible w-[100%] mt-[2px]  z-50 left-0 group-hover:visible  transition-all duration-150 bg-white absolute shadow-inner  ">
                   <div className="container  h-[550px] opacity-0  flex group-hover:visible group-hover:opacity-100 traslition-all duration-300 flex-wrap py-5 justify-center gap-5 ">
                     <div className=" flex-col items-center flex shadow-md h-[220px] ">
                       <img
@@ -346,7 +337,6 @@ const Header = () => {
 
         <div className="h-[1px] bg-slate-100 mt-2"></div>
       </header>
-      {/* navbar 2 */}
       <header className={`w-full flex justify-center top-0 p-2 bg-white fixed shadow-md z-[1000] transition-transform duration-300  ${
           showStickyHeader ? "translate-y-0 " : "-translate-y-full top-0"
         }`}>
@@ -523,10 +513,12 @@ const Header = () => {
 
               <div className="flex items-center space-x-2">
                 <div className="relative flex text-center justify-center items-center">
+                  <a href="/wishlist">
                   <FiHeart className="cursor-pointer text-xl text-black hover:text-[#87B38D]" />
                   <span className="absolute bottom-3 left-4  bg-[#87B38D] text-xs flex justify-center items-center  text-white h-4 w-4 rounded-full">
                     0
                   </span>
+                  </a>
                 </div>
               </div>
               <div className="flex items-center space-x-2 relative">

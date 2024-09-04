@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 const TestimonialSlider = () => {
   return (
     <div className="relative flex items-center mr-10 ">
-      {/* Left Navigation Button */}
+   
       <div
         className="swiper-button-prev-custom absolute left-0 z-10 cursor-pointer"
       >
@@ -27,7 +27,7 @@ const TestimonialSlider = () => {
         slidesPerView={1}
         className="mySwiper w-full "
       >
-        {/* Testimonial Slide 1 */}
+    
         <SwiperSlide>
           <div className="text-center p-8">
             <p className="text-sm uppercase text-green-600 mb-2">Wooden Accessories</p>
@@ -46,7 +46,7 @@ const TestimonialSlider = () => {
           </div>
         </SwiperSlide>
 
-        {/* Testimonial Slide 2 */}
+    
         <SwiperSlide>
           <div className="text-center p-8">
             <p className="text-sm uppercase text-green-600 mb-2">Wooden Accessories</p>
@@ -82,10 +82,10 @@ const TestimonialSlider = () => {
             <p className="font-bold">Elsa Nora - Happy Customer</p>
           </div>
         </SwiperSlide>
-        {/* More Slides as Needed */}
+      
       </Swiper>
 
-      {/* Right Navigation Button */}
+     
       <div
         className="swiper-button-next-custom absolute right-0 z-10 cursor-pointer"
       >

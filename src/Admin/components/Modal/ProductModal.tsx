@@ -26,7 +26,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ isOpen, onClose, onSave, ed
       const reader = new FileReader();
       reader.onloadend = () => {
         setImagePreview(reader.result);
-        setImage(URL.createObjectURL(file)); // Use URL.createObjectURL for submission
+        setImage(URL.createObjectURL(file)); 
       };
       reader.readAsDataURL(file);
     }
@@ -36,7 +36,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ isOpen, onClose, onSave, ed
     e.preventDefault();
 
     const updatedProduct: ProductType = {
-      id: editingProduct?.id || '', // Default value for id
+      id: editingProduct?.id || '',
       title,
       productCount,
       image,

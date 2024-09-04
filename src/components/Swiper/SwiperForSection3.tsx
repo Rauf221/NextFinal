@@ -8,11 +8,11 @@ import "swiper/css/navigation";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import styles from "../../styles/Slider.module.css";
 
-// SWR fetcher function
+
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const SwiperSection3 = () => {
-  // Use SWR to fetch data
+ 
   const { data, error } = useSWR<{ swiper: { id: string, title: string, image: string, productsCount: number }[] }>("http://localhost:3001/DatasForAdminPanel", fetcher);
 
   if (error) return <div>Failed to load</div>;
@@ -57,7 +57,7 @@ const SwiperSection3 = () => {
         ))}
       </Swiper>
 
-      {/* Navigation Buttons */}
+  
       <div className={`absolute top-[50%] transform -translate-y-1/2 left-[1220px] ${styles.swiperButtonPrev}`}>
       <MdArrowForwardIos /> 
       </div>

@@ -13,11 +13,11 @@ import { GoShareAndroid } from "react-icons/go";
 import { RxDotsHorizontal } from "react-icons/rx";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
-// SWR fetcher function
+
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const SwiperForHandMadeServices = () => {
-  // Use SWR to fetch data
+
   const { data, error } = useSWR<[]>("http://localhost:3001/swiper", fetcher);
 
   if (error) return <div>Failed to load</div>;

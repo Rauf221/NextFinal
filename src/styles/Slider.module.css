@@ -1,6 +1,4 @@
-/* styles/Slider.module.css */
 .swiperButtonNext {
-    /* Styles for the next button */
  
     color: #333 !important;
     width: 40px;
@@ -16,7 +14,6 @@
   }
   
   .swiperButtonPrev {
-    /* Styles for the previous button */
    
     color: #333 !important;
     width: 40px;

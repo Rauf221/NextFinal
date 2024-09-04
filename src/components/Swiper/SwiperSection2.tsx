@@ -1,5 +1,3 @@
-// components/SwiperMainContext.jsx
-// components/SwiperMainContext.jsx
 
 "use client";
 import React, { useState, useEffect } from "react";
@@ -18,7 +16,6 @@ import styles from "../../styles/Slider.module.css";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-// Define the type for the product in the JSON
 type ProductType = {
   title: string;
   category: string;
@@ -28,13 +25,11 @@ type ProductType = {
   rating: number | null;
 };
 
-// Define the type for each slide in the JSON
 type SlideType = {
   id: number;
   products: ProductType[];
 };
 
-// SWR fetcher function
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const SwiperMainContext = () => {
@@ -52,7 +47,7 @@ const SwiperMainContext = () => {
       swiper.navigation.init();
       swiper.navigation.update();
     }
-  }, [data]); // Ensures Swiper is initialized after data is loaded
+  }, [data]); 
 
   if (error) return <div>Failed to load</div>;
   if (!data) return <div>Loading...</div>;
@@ -76,7 +71,6 @@ const SwiperMainContext = () => {
     setWishlistItems((prevItems) => prevItems.filter(item => item !== product));
   };
 
-  // Toggle sidebar visibility
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
   return (
@@ -94,7 +88,6 @@ const SwiperMainContext = () => {
       >
         {data.map((slide, index) => (
           <SwiperSlide key={slide.id}>
-            {/* Swiper slide container for two products */}
             <div className="h-[850px] w-[300px] flex flex-col gap-5">
               <div className="relative h-[50%] w-[100%] flex flex-col items-center">
                 <div className="flex flex-col items-center group/main">
@@ -111,7 +104,6 @@ const SwiperMainContext = () => {
                         <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-1 w-0 h-0 border-t-[5px] border-t-black border-x-[5px] border-x-transparent"></div>
                       </div>
                     </div>
-                    {/* Quick View Icon */}
                     <div className="relative group/icons">
                       <IoIosSearch onClick={() => openModalWithProduct(slide.products[0])} />
                       <div className="w-[90px] text-center absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover/icons:opacity-100 bg-black text-white text-sm px-2 py-1">
@@ -119,7 +111,6 @@ const SwiperMainContext = () => {
                         <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-1 w-0 h-0 border-t-[5px] border-t-black border-x-[5px] border-x-transparent"></div>
                       </div>
                     </div>
-                    {/* Compare Icon */}
                     <div className="relative group/icons">
                       <IoIosGitCompare />
                       <div className="w-[90px] text-center absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover/icons:opacity-100 bg-black text-white text-sm px-2 py-1">
@@ -127,7 +118,6 @@ const SwiperMainContext = () => {
                         <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-1 w-0 h-0 border-t-[5px] border-t-black border-x-[5px] border-x-transparent"></div>
                       </div>
                     </div>
-                    {/* Add to Wishlist Icon */}
                     <div className="relative group/icons">
                       <IoMdHeartEmpty onClick={() => addToWishlist(slide.products[0])} />
                       <div className="w-[120px] text-center absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover/icons:opacity-100 bg-black text-white text-sm px-2 py-1">
@@ -156,9 +146,9 @@ const SwiperMainContext = () => {
                 </div>
               </div>
 
-              {/* 2nd Card */}
+           
               <div className="relative h-[50%] w-[100%] flex flex-col items-center">
-                {/* Product Image and Details */}
+               
                 <div className="flex flex-col items-center group/main">
                   <img
                     src={slide.products[1]?.image}
@@ -173,7 +163,7 @@ const SwiperMainContext = () => {
                         <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-1 w-0 h-0 border-t-[5px] border-t-black border-x-[5px] border-x-transparent"></div>
                       </div>
                     </div>
-                    {/* Quick View Icon */}
+              
                     <div className="relative group/icons">
                       <IoIosSearch onClick={() => openModalWithProduct(slide.products[1])} />
                       <div className="w-[90px] text-center absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover/icons:opacity-100 bg-black text-white text-sm px-2 py-1">
@@ -181,7 +171,7 @@ const SwiperMainContext = () => {
                         <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-1 w-0 h-0 border-t-[5px] border-t-black border-x-[5px] border-x-transparent"></div>
                       </div>
                     </div>
-                    {/* Compare Icon */}
+             
                     <div className="relative group/icons">
                       <IoIosGitCompare />
                       <div className="w-[90px] text-center absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover/icons:opacity-100 bg-black text-white text-sm px-2 py-1">
@@ -189,7 +179,6 @@ const SwiperMainContext = () => {
                         <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-1 w-0 h-0 border-t-[5px] border-t-black border-x-[5px] border-x-transparent"></div>
                       </div>
                     </div>
-                    {/* Add to Wishlist Icon */}
                     <div className="relative group/icons">
                       <IoMdHeartEmpty onClick={() => addToWishlist(slide.products[1])} />
                       <div className="w-[120px] text-center absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover/icons:opacity-100 bg-black text-white text-sm px-2 py-1">
@@ -199,7 +188,6 @@ const SwiperMainContext = () => {
                     </div>
                   </div>
                 </div>
-                {/* Product Title and Details */}
                 <div className="text-center gap-1 flex flex-col">
                   <h1 className="lora text-sm mt-2">
                     {slide.products[1]?.title}

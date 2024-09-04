@@ -7,6 +7,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { IoIosGitCompare, IoIosSearch, IoMdHeartEmpty } from "react-icons/io";
 
 type ProductType = {
+  id: number;
   title: string;
   category: string;
   price: string;
@@ -20,12 +21,13 @@ type WishlistItemProps = {
   removeFromWishlist: (product: ProductType) => void;
 };
 
+
 const WishlistItem: React.FC<WishlistItemProps> = ({ wishlistItems, removeFromWishlist }) => {
   const [selected, setSelected] = useState(false);
-  const [cartItems, setCartItems] = useState<ProductType[]>([]); // State for cart items
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // State for sidebar
+  const [cartItems, setCartItems] = useState<ProductType[]>([]); 
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState<ProductType | null>(null); // State for selected product
+  const [selectedProduct, setSelectedProduct] = useState<ProductType | null>(null);
 
   const [cartCount, setCartCount] = useState(0);
 
@@ -35,7 +37,7 @@ const WishlistItem: React.FC<WishlistItemProps> = ({ wishlistItems, removeFromWi
 
   const addToCart = (product: ProductType) => {
     setCartItems((prevItems) => [...prevItems, product]);
-    setIsSidebarOpen(true); // Open sidebar on adding item to cart
+    setIsSidebarOpen(true); 
     setCartCount(cartCount + 1);
   };
 
@@ -48,7 +50,7 @@ const WishlistItem: React.FC<WishlistItemProps> = ({ wishlistItems, removeFromWi
     <div className="p-4 container">
       <h2 className="text-xl font-bold mb-4">YOUR PRODUCTS WISHLIST</h2>
 
-      {wishlistItems?.length === 0 ? (
+      {wishlistItems?.length   === 0 ? (
         <p>No items in wishlist.</p>
       ) : (
         <div>
@@ -74,7 +76,7 @@ const WishlistItem: React.FC<WishlistItemProps> = ({ wishlistItems, removeFromWi
                   </div>
                   <img src={item.image} alt="Product Image" className="w-[400px] h-[450px] object-cover" />
                   <div className="absolute w-[180px] h-[50px] top-[380px] left-[110px] flex text-2xl justify-center items-center gap-5 bg-white opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                    {/* Add to Cart Icon */}
+               
                     <div className="relative group">
                       <GiShoppingCart onClick={() => addToCart(item)} />
                       <div className="w-[90px] text-center absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-black text-white text-sm px-2 py-1">
@@ -83,7 +85,7 @@ const WishlistItem: React.FC<WishlistItemProps> = ({ wishlistItems, removeFromWi
                       </div>
                     </div>
 
-                    {/* Quick View Icon */}
+                   
                     <div className="relative group">
                       <IoIosSearch onClick={() => openModalWithProduct(item)} />
                       <div className="w-[90px] text-center absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-black text-white text-sm px-2 py-1">
@@ -92,7 +94,7 @@ const WishlistItem: React.FC<WishlistItemProps> = ({ wishlistItems, removeFromWi
                       </div>
                     </div>
 
-                    {/* Compare Icon */}
+                
                     <div className="relative group">
                       <IoIosGitCompare />
                       <div className="w-[90px] text-center absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-black text-white text-sm px-2 py-1">

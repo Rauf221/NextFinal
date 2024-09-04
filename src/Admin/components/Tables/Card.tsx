@@ -4,7 +4,7 @@ import { FiEdit, FiTrash, FiPlus } from "react-icons/fi";
 import useSWR from "swr";
 import ProductModal from "../Modal/ProductModal";
 
-// Define types
+
 type ProductType = {
   id: string;
   title: string;
@@ -12,7 +12,6 @@ type ProductType = {
   image: string;
 };
 
-// Fetcher function for SWR
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 export default function Card() {
@@ -39,7 +38,7 @@ export default function Card() {
         throw new Error(`Delete failed: ${response.statusText}. ${errorText}`);
       }
 
-      mutate(); // Refresh data
+      mutate(); 
     } catch (error) {
       console.error("Error deleting product:", error);
       alert("Failed to delete the product. Please try again.");
@@ -54,7 +53,7 @@ export default function Card() {
   const handleSave = async (updatedProduct: ProductType) => {
     try {
       if (editingProduct) {
-        // Editing an existing product
+     
         await fetch(`http://localhost:3001/DatasForAdminPanel/${updatedProduct.id}`, {
           method: "PUT",
           headers: {
@@ -63,7 +62,7 @@ export default function Card() {
           body: JSON.stringify(updatedProduct),
         });
       } else {
-        // Adding a new product
+        
         await fetch(`http://localhost:3001/DatasForAdminPanel`, {
           method: "POST",
           headers: {
@@ -88,7 +87,7 @@ export default function Card() {
         <button
           className="flex items-center px-4 py-2 bg-white text-black rounded"
           onClick={() => {
-            setEditingProduct(null); // Clear editingProduct for new product
+            setEditingProduct(null); 
             setIsModalOpen(true);
           }}
         >
